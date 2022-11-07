@@ -33,7 +33,36 @@ function login () {
     return ingresar;
 }
 
-if (login()){
+let inflacionMensualEstimada = 6.2;
+
+const productosEnVenta = [{
+    detalle: "Remera",
+    precio: 6000,
+    cuotas: 6600
+},
+{
+    detalle: "Pantalón",
+    precio: 12000,
+    cuotas: 12000
+},
+]
+
+productosEnVenta.push({ detalle: "Hoodie", precio: 8400, cuotas: 9000 });
+console.log(productosEnVenta);
+
+let productoElegido = parseInt(prompt("Elegí la opción que corresponda al producto que quieras comprar: \n1 - Remera \n2 - Pantalón \n3 - Hoodie"));
+
+if (productoElegido == 1) {
+    alert("Pagando de contado te sale $ " + productosEnVenta.precio + " Pagando en cuotas te sale $ " + productosEnVenta.cuotas);
+} else if (productoElegido == 2) {
+    alert("Pagando de contado te sale $ " + productosEnVenta[precio] + " Pagando en cuotas te sale $ " + productosEnVenta[cuotas]);
+} else if (productoElegido == 3) {
+    alert("Pagando de contado te sale $ " + productosEnVenta[precio] + " Pagando en cuotas te sale $ " + productosEnVenta[cuotas]);
+} else {
+    alert ("Elegiste una opción INEXISTENTE");
+}
+
+/* if (login()){
     alert ("Te voy a pedir unos datos para determinar si te conviene comprar al contado o en cuotas,  y ganarle a la inflación (guiño guiño)");
     let inflacionMensualEstimada = 6.2;
     let precioEfectivo = parseInt(prompt("Ingresá el PRECIO TOTAL al CONTADO/EFECTIVO: "));
@@ -57,8 +86,9 @@ if (cuotas == 1) {
     alert ("Tu usuario quedó inhabilitado. Comunicate con el administrador.");
 }
 
-
-alert("FIN DE LA ENTREGA HASTA AHORA. Programa en desarrollo ;)");
+alert("FIN DE LA ENTREGA HASTA AHORA. Programa en desarrollo ;)"); */
 
 
 /*     alert('Pagando en 3 cuotas, el valor de cada una va a ser de $ ' + (precioEnCuotas /3) + (inflacionMensualEstimada*3)); */
+
+alert("FIN DE LA ENTREGA HASTA AHORA. Programa en desarrollo ;)");
